@@ -14,15 +14,25 @@ let imgUrl3 = ''
 
 if(width<=375){
     box1.src = 'images/mobile-image-hero-1.jpg'
-    imgUrl1 = 'images/mobile-image-hero-1.jpg'
-    imgUrl2 = 'images/mobile-image-hero-2.jpg'
-    imgUrl3 = 'images/mobile-image-hero-3.jpg'
 } else{
     box1.src = 'images/desktop-image-hero-1.jpg'
-    imgUrl1 = 'images/desktop-image-hero-1.jpg'
-    imgUrl2 = 'images/desktop-image-hero-2.jpg'
-    imgUrl3 = 'images/desktop-image-hero-3.jpg'
 }
+
+function resize(){
+    if(width<=375){
+        imgUrl1 = 'images/mobile-image-hero-1.jpg'
+        imgUrl2 = 'images/mobile-image-hero-2.jpg'
+        imgUrl3 = 'images/mobile-image-hero-3.jpg'
+    } else{
+        imgUrl1 = 'images/desktop-image-hero-1.jpg'
+        imgUrl2 = 'images/desktop-image-hero-2.jpg'
+        imgUrl3 = 'images/desktop-image-hero-3.jpg'
+    }
+    handleChange(n)
+}
+resize()
+
+window.addEventListener("resize",resize)
 
 function handleDown(){
     nav.classList.add("show")
