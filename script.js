@@ -8,9 +8,9 @@ let n = 1
 
 let width = window.innerWidth
 
-let imgUrl1 = ``
-let imgUrl2 = ``
-let imgUrl3 = ``
+let imgUrl1 = ''
+let imgUrl2 = ''
+let imgUrl3 = ''
 
 if(width<=375){
     box1.src = 'images/mobile-image-hero-1.jpg'
