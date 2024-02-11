@@ -121,15 +121,37 @@ nav h1{
         justify-content: center;
     }
     .box-1{
-        width: 750px;
+        width: 850px;
+        display: flex;
+        align-items: flex-start;
     }
     .box-2{
-        width: 350px;
+        width: 493px;
     }
     .box-3, .box-5{
         width: 390px;
     }
     .box-4{
         width: 560px;
+    }
+    nav button{
+        display: none;
+    }
+    .nav-link{
+        position: static;
+        background-color: transparent;
+        transition-duration: 0s;
+    }
+    .nav-link button{
+        display: none;
+    }
+    .nav-link ul li a{
+        color: var(--White);
+    }
+}
+@media screen and (min-width: 1340px) {
+    .btnGroup{
+        right: -88px;
+        z-index: 2;
     }
 }
