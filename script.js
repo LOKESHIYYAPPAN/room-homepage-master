@@ -13,7 +13,7 @@ let imgUrl2 = ``
 let imgUrl3 = ``
 
 if(width<=375){
-    box1.src = `images/mobile-image-hero-1.jpg`
+    box1.src = 'images/mobile-image-hero-1.jpg'
     imgUrl1 = `images/mobile-image-hero-1.jpg`
     imgUrl2 = `images/mobile-image-hero-2.jpg`
     imgUrl3 = `images/mobile-image-hero-3.jpg`
